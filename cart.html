@@ -1,0 +1,167 @@
+<html lang="fr">
+
+<head>
+    <title>RedStore | Produits</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" width="125">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="">A propos</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Mon compte</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Produit</th>
+                <th>Quantité</th>
+                <th>Total HT</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/buy-1.jpg">
+                        <div>
+                            <p>T-Shirt PUMA</p>
+                            <small>Prix : 50€</small>
+                            <br>
+                            <a href="">Supprimer</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>50€</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/buy-2.jpg">
+                        <div>
+                            <p>T-Shirt PUMA</p>
+                            <small>Prix : 50€</small>
+                            <br>
+                            <a href="">Supprimer</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>50€</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/buy-3.jpg">
+                        <div>
+                            <p>T-Shirt PUMA</p>
+                            <small>Prix : 50€</small>
+                            <br>
+                            <a href="">Supprimer</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>50€</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Sous-Total</td>
+                    <td>150€</td>
+                </tr>
+                <tr>
+                    <td>Taxe</td>
+                    <td>35€</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>185€</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Télécharger Notre Application</h3>
+                    <p>Compatible Android Et IOS</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png">
+                        <img src="img/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logo-white.png">
+                    <p>Nous Proposons Un Service De Qualité</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Liens</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog</li>
+                        <li>Politique De Retour</li>
+                        <li>Affiliation</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Nous suivre</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - Projet M4105C</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        if (window.innerWidth > 800)
+            MenuItems.style.maxHeight = "auto";
+        else
+            MenuItems.style.maxHeight = "0px";
+
+        window.addEventListener("resize", function (event) {
+            window.location.reload(true);
+        });
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
