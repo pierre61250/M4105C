@@ -1,7 +1,7 @@
 <html lang="fr">
 
 <head>
-    <title>RedStore | Accueil</title>
+    <title>RedStore | Produits</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -12,54 +12,40 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="img/logo.png" width="125">
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="products.html">Produits</a></li>
-                        <li><a href="">A propos</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Mon compte</a></li>
-                    </ul>
-                </nav>
-                <img src="img/cart.png" width="30px" height="30px">
-                <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" width="125">
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Donnez A Votre Entraînement<br>Un Nouveau Style !</h1>
-                    <p>La Qualité avant tout.</p>
-                    <a href="" class="btn">Go &#8594</a>
-                </div>
-                <div class="col-2">
-                    <img src="img/image1.png">
-                </div>
-            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="">A propos</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Mon compte</a></li>
+                </ul>
+            </nav>
+            <img src="img/cart.png" width="30px" height="30px">
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
 
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="img/category-1.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="img/category-2.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="img/category-3.jpg">
-                </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Produits</h2>
+            <div class="trie">
+                <p>Trier par </p>
+                <select>
+                    <option>Meilleurs Ventes</option>
+                    <option>Notes</option>
+                    <option>Prix Croissant</option>
+                    <option>Prix Décroissant</option>
+                </select>
             </div>
         </div>
-    </div>
-    <div class="small-container">
-        <h2 class="title">Meilleurs Ventes</h2>
         <div class="row">
             <div class="col-4">
                 <img src="img/product-1.jpg">
@@ -109,9 +95,6 @@
                 </div>
                 <p>50€</p>
             </div>
-        </div>
-        <h2 class="title">Dernier Produits</h2>
-        <div class="row">
             <div class="col-4">
                 <img src="img/product-5.jpg">
                 <h4>Tshirt PUMA</h4>
@@ -207,94 +190,6 @@
                     <i class="fa fa-star-o"></i>
                 </div>
                 <p>50€</p>
-            </div>
-        </div>
-    </div>
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="img/exclusive.png" class="offer-img">
-                </div>
-                <div class="col-2">
-                    <p>Exclusivement sur RedStore</p>
-                    <h1>Smart Band 4</h1>
-                    <small>La Mi Smart Band 4</small>
-                    <p><a href="" class="btn">Acheter &#8594;</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="testimonial">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Tres bon site !</p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="img/user-1.png">
-                    <h3>Clara</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Tres bon site !</p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="img/user-2.png">
-                    <h3>Théo</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Tres bon site !</p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="img/user-3.png">
-                    <h3>Lucie</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="brands">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-5">
-                    <a href="https://www.oppo.com/fr/">
-                        <img src="img/logo-oppo.png">
-                    </a>
-                </div>
-                <div class="col-5">
-                    <a href="https://www.coca-cola-france.fr/">
-                        <img src="img/logo-coca-cola.png">
-                    </a>
-                </div>
-                <div class="col-5">
-                    <a href="https://www.paypal.com/fr/home/">
-                        <img src="img/logo-paypal.png">
-                    </a>
-                </div>
-                <div class="col-5">
-                    <a href="https://www.philips.fr/">
-                        <img src="img/logo-philips.png">
-                    </a>
-                </div>
             </div>
         </div>
     </div>
