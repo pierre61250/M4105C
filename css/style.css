@@ -429,9 +429,11 @@ td input{
     padding: 5px;
 }
 
-td a{
+td button{
+    all: unset;
     color: #ff523b;
     font-size: 12px;
+    cursor: pointer;
 }
 
 td img{
@@ -476,6 +478,23 @@ th:last-child{
     overflow: hidden;
 }
 
+.form-container-reintPassword{
+    background: #fff;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.reintPassForm{
+    position: initial;
+    padding: 20px 20px;
+}
+
 .form-container span{
     font-weight: bold;
     padding: 0 10px;
@@ -483,6 +502,23 @@ th:last-child{
     cursor: pointer;
     width: 100px;
     display: inline-block;
+}
+
+.form-container-reintPassword p{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.form-container-reintPassword form{
+    max-width: 300px;
+    padding: 20px 20px;
+    position: initial;
+    top: 130px;
+    transition: transform 1s;
 }
 
 .form-btn{
