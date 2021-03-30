@@ -1,0 +1,207 @@
+<html lang="fr">
+
+<head>
+    <title>RedStore | Polo PUMA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="125"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="">A propos</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Mon compte</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div id="info">
+        <i class="fa fa-info-circle"></i>
+        <p id="add">Ajouté au panier !</p>
+        <span class="closebtn" role="alert" onclick="this.parentElement.style.display='none';">&times;</span>
+    </div>
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/product-4.jpg" width="100%" id="ProductImg">
+            </div>
+            <div class="col-2">
+                <p>Polos</p>
+                <h1>Polo PUMA</h1>
+                <h4>50€</h4>
+                <select id="taille">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                <input type="number" value="1" id="qts" min="1">
+                <a class="btn" onclick="addPanier()">Ajouter Au Panier</a>
+                <h3>Détails <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Polo PUMA - Bleu Marine</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Recommandations</h2>
+            <a href="products.html">
+                <p>Plus</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="img/product-9.jpg">
+                <h4>Montre Noir</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50€</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-10.jpg">
+                <h4>Baskets HRX</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50€</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-11.jpg">
+                <h4>Baskets Grise</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50€</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product-12.jpg">
+                <h4>Jogging NIKE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50€</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Télécharger Notre Application</h3>
+                    <p>Compatible Android Et IOS</p>
+                    <div class="app-logo">
+                        <img src="img/play-store.png">
+                        <img src="img/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logo-white.png">
+                    <p>Nous Proposons Un Service De Qualité</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Liens</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog</li>
+                        <li>Politique De Retour</li>
+                        <li>Affiliation</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Nous suivre</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - Projet M4105C</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        if (window.innerWidth > 800)
+            MenuItems.style.maxHeight = "auto";
+        else
+            MenuItems.style.maxHeight = "0px";
+
+        window.addEventListener("resize", function (event) {
+            window.location.reload(true);
+        });
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <script>
+        var infoDiv = document.getElementById("info");
+        var choixTaille = document.getElementById("taille");
+        var choixQts = document.getElementById("qts");
+
+        infoDiv.style.display = "none";
+
+        function addPanier() {
+            var choice = choixTaille.selectedIndex;
+            var taille = choixTaille.options[choice].value;
+            document.getElementById("add").innerHTML = "Ajouté au panier ! Quantités : [" + choixQts.value + "] / Taille : [" + taille + "]";
+            console.log(choixQts.value);
+            infoDiv.style.display = "flex";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -76,6 +76,7 @@ p{
     margin: 30px 0;
     border-radius: 30px;
     transition: background 0.5s;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -536,6 +537,31 @@ form a{
     transform: translateX(115px);
     transition: transform 1s;
 }
+
+#info {
+    display: none;
+    padding: 20px;
+    background-color: #ff523b;
+    color: white;
+    line-height: 38px;
+  }
+
+  #info p{
+    color: white;
+  }
+  #info i{
+    padding: 10px;
+  }
+
+  .closebtn {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+  }
 
 @media only screen and (max-width: 800px){
 
