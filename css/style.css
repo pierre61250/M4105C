@@ -599,6 +599,15 @@ form a{
     cursor: pointer;
   }
 
+  .payer{
+      height: 150px;
+      padding: 20px;
+  }
+
+  .payer a{
+      float: right;
+  }
+
 @media only screen and (max-width: 800px){
 
     nav ul{
